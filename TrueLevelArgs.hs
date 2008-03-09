@@ -5,7 +5,7 @@
 module TrueLevelArgs
 where
 
-import ParseArgs
+import System.Console.ParseArgs
 
 data Options =
     OptionUseRMS |

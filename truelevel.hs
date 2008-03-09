@@ -8,7 +8,7 @@ where
 import Data.List
 import Data.Maybe
 import System.Environment
-import ParseArgs
+import System.Console.ParseArgs
 import WAVE
 import TrueLevelArgs
 

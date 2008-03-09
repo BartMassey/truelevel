@@ -7,7 +7,7 @@ Author: Bart Massey <bart@cs.pdx.edu>
 Maintainer: Bart Massey <bart@cs.pdx.edu>
 Stability: Alpha
 Synopsis: audio compressor
-Build-Depends: base, haskell98, WAVE, ParseArgs
+Build-Depends: base, WAVE, parseargs
 
 Executable: truelevel
 Main-Is: truelevel.hs
