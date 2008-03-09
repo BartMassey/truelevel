@@ -9,7 +9,7 @@ import Data.List
 import Data.Maybe
 import System.Environment
 import System.Console.ParseArgs
-import WAVE
+import Data.WAVE
 import TrueLevelArgs
 
 -- Create overlapping tiles of n samples.  Each tile is a
