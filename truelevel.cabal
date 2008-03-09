@@ -1,4 +1,5 @@
 Name: truelevel
+Build-Type: Simple
 Description: An audio file compressor / limiter.  This
              program will adjust the dynamic range of a WAVE file.
 Version: 0.1
