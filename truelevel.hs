@@ -35,7 +35,7 @@ avg l = sum l / fromIntegral (length l)
 
 --- Estimate peak amplitude using rms power
 rms :: [Double] -> Double
-rms s = 2 * sqrt (2 * sum (map (\x -> x * x) s) / fromIntegral (length s))
+rms s = 2 * sqrt (2 * avg (map (\x -> x * x) s))
 
 --- Estimate peak amplitude as twice highest absolute peak
 --- of low-pass
