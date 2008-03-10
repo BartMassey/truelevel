@@ -37,6 +37,14 @@ avg l = sum l / fromIntegral (length l)
 rms :: [Double] -> Double
 rms s = 2 * sqrt (2 * avg (map (\x -> x * x) s))
 
+--- Tile variant for peak amplitude
+tile :: Int -> Int -> [a] -> [[a]]
+tile _ _ [] = []
+tile n o s =
+    let cur = take n s
+        rest = drop (n - o) s in
+    cur : (tile n o rest)
+
 --- Estimate peak amplitude as twice highest absolute peak
 --- of low-pass
 --- XXX fixme: low-pass is moving average for now
