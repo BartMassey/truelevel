@@ -2,7 +2,7 @@ Name: truelevel
 Build-Type: Simple
 Description: An audio file compressor / limiter.  This
              program will adjust the dynamic range of a WAVE file.
-Version: 0.1.3
+Version: 0.1.3.1
 License: BSD3
 License-File: COPYING
 Copyright: Copyright (c) 2006-2014 Bart Massey
@@ -18,6 +18,7 @@ Cabal-Version: >=1.10
 Executable truelevel
   Default-Language: Haskell2010
   Main-Is: truelevel.hs
+  Other-Modules: TrueLevelArgs
   Build-Depends: base >=3&&<5, containers >=0.3&&<1,
                  parseargs >=0.1&&<1,
                  WAVE >=0.1&&<1
@@ -29,4 +30,4 @@ Source-Repository head
 Source-Repository this
   Type: git
   Location: https://github.com/BartMassey/truelevel.git
-  Tag: v0.1.3
+  Tag: v0.1.3.1
